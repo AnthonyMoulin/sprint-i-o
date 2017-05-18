@@ -1,0 +1,45 @@
+{% extends '@AppBundle/Resources/views/Default/navigation.html.twig' %}
+
+{% block title %} - Home{% endblock %}
+
+
+{% block section %}
+
+
+	<h1>
+		Sprint.io
+	</h1>
+
+	<p>
+	<a href="{{path('sprint')}}">
+	Run your sprint</a>
+	</p>
+
+{% if global_access %}
+
+	<h1>
+
+ 		
+	</h1>		
+
+{% else %}
+
+	<h1>
+
+ 	<a href="{{ path('auth') }}">
+ 		Sign in
+ 		</a>
+	</h1>	
+	
+	 <h1>Sprint Manager in a kanban Board</h1>
+
+{% endif %}
+
+
+{% endblock %}
+
+
+    
+        
+
+

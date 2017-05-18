@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block navigation %}
+
+
+<a id="logo" href="{{path('homepage')}}">
+<img src="{{ asset('image/logo.gif') }}" alt="sprint.io" />
+</a>
+<br>
+{% if global_access %}
+
+<div>
+<a class=" btn btn-info" role="button" href="{{ path('left') }}">Sign out</a>
+</div>
+
+{% else %}
+<div>
+<a class=" btn btn-info" role="button" href="{{ path('auth') }}">Sign in</a>
+
+<a class="btn btn-info" role="button" href="{{ path('join') }}">Sign up</a>
+</div>
+
+{% endif %}
+
+
+{% endblock %}
+
+
