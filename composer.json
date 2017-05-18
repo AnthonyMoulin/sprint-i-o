@@ -3,6 +3,9 @@
 	"license" : "MIT",
 	"type" : "project",
 	"description" : "an application to sprint",
+	"author": "AnthonyMoulin",
+	"url" : "https://github.com/AnthonyMoulin/appear",
+	
 	"autoload" : {
 		"psr-4" : {
 			"" : "src/"
